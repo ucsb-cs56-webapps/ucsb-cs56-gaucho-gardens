@@ -11,14 +11,14 @@ public class HelloController {
         return "index";
     }
 
-	@RequestMapping("/vegetables")
+	@RequestMapping("/seasonalplants")
     public String page1() {
-        return "vegetables";
+        return "seasonalplants";
     }
 
-	@RequestMapping("/calendar")
+	@RequestMapping("/user_dashboard")
 	public String page2() {
-        return "calendar";
+        return "user_dashboard";
     }
 
 	@RequestMapping("/weather")
