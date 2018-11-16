@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html>
  <head>
    <title>Gaucho Gardens</title>
    <#include "head.ftl" />
+   <link rel="stylesheet" type="text/css" href="bg_image.css"/> 
  </head>
  <body>
    <#include "navbar.ftl" />
