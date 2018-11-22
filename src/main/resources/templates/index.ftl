@@ -7,12 +7,15 @@
 		body {
 			background-color: #E5F0F1;
 		}
-	</style>
+
+
+   </style>
  </head>
  <body>
    <#include "navbar.ftl" />
    <h1>Welcome to Gaucho Gardens!</h1>
-    <img src="cucumber.jpg" alt="cucumber" width="420" height="420"/>
-	
+   <a href="https://cs56-f18-gauchogardens.herokuapp.com/seasonalplants">
+		<img src="cucumber.jpg" class="rounded-circle" alt="cucumber"  width="200" height="156" ></img>
+   </a>
  </body>
 </html>
