@@ -45,7 +45,7 @@
                    <jdkVersion>1.8</jdkVersion>
                    <!-- Use your own application name -->
          	  <!-- at Heroku CLI, use heroku apps to list, or use Heroku Dashboard -->
-                   <appName>cs56-f18-gauchogardens</appName> 
+                   <appName>cs56-f18-gauchogardens</appName>
                    <processTypes>
                      <!-- Tell Heroku how to launch your application -->
                      <!-- You might have to remove the ./ in front   -->
@@ -59,7 +59,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-			
+
 			<plugin>
 	 <!-- for testing database, use the command  -->
   <groupId>org.codehaus.mojo</groupId>
