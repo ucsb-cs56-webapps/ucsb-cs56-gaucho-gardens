@@ -1,7 +1,6 @@
 /*I know nothing about css but I made a file anyways. Feel free to replace this */
 
-/*placeholder. White for readability. Idk if we can find a way to style white with black outline*/
-
+/*placeholder. White with black outline for redability in any background */
 h1 {
     text-align: center;
     color: white;
@@ -17,7 +16,6 @@ h2, h3{
 }
 
 p {
-    text-align: center;
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
