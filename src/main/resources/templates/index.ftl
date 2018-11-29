@@ -14,6 +14,18 @@
         </h1>
       </div>
     </div>
+
+    <div class=container">
+	  <table>
+		<tr>
+		  <#list vegetables as veg>
+			<td>
+			  <img src=${veg.getImageURL}>
+			</td>
+		  </#list>
+		</tr>
+	  </table>
+	</div>
    
   </body>
 </html>
