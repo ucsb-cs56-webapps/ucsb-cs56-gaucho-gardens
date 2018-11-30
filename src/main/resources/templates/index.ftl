@@ -18,11 +18,9 @@
     <div class=container">
 	  <table>
 		<tr>
-		  <#list vegetables as veg>
 			<td>
-			  <img src=${veg.getImageURL}>
+			  <p>${veg}</p>
 			</td>
-		  </#list>
 		</tr>
 	  </table>
 	</div>
