@@ -17,9 +17,22 @@ public class Vegetable{
 	public String getColor(){return color;}
 	public String getSeason(){return season;}
 	public String getImageURL(){return imageURL;}
+
 	@Override
 	public String toString(){
 		return "Name: " + name + " Color: " + color + " Season: " + season + " URL: " + imageURL;
+	}
+
+	@Override
+	public boolean equals(Object o){
+
+	//	if (!isInstanceOf(Vegetable) ) 
+	//		return false;
+
+		String str_1 = this.toString();
+		String str_2 = o.toString();
+
+		return str_1.equals(str_2);
 	}
 	
 }

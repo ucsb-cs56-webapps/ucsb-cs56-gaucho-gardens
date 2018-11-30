@@ -3,7 +3,6 @@ package edu.ucsb.cs56.pconrad.springboot.hello;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-
 @Controller
 public class HelloController {
 
@@ -25,8 +24,12 @@ public class HelloController {
 	public String page3() {
         return "search";
     }
+	@RequestMapping("/photos")
+    public String page4() {
+        return "photos";
+    }
 	@RequestMapping("/weather")
-	public String page4() {
+	public String page5() {
         return "weather";
     }
 
