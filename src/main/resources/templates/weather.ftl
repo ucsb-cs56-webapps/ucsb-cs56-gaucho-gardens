@@ -26,7 +26,9 @@
  <body>
    <#include "navbar.ftl" />
    <h1>Weather/Map page</h1>
-  <p>Check the weather! Check temperature, rain and windspeed to see if you should take your plants indoors or leave them outside!</p>
+  <p>Check the weather! 
+  
+  Check temperature, rain and windspeed to see if you should take your plants indoors or leave them outside!</p>
 
 
   <div id="map"></div>
