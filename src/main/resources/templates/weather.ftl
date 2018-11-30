@@ -26,20 +26,22 @@
  <body>
    <#include "navbar.ftl" />
    <h1>Weather/Map page</h1>
-  <p>Check the weather! 
-  
+  <p>Check the weather!
+
   Check temperature, rain and windspeed to see if you should take your plants indoors or leave them outside!</p>
 
 
-  <div id="map"></div>
+  <div id="map"> </div>
 
-  <script>
+    <script>
   /*I apologize in advance for the poor soul who has to maintain this mess after me. If anyone knows
-  anything about frontend dev, pls throw this code into an incinerator and replace it with something less unsightly*/
+  anything about leaflet maps and frontend dev, pls throw this code into an incinerator and replace it with something less unsightly*/
 
   var weatherkey='28b6782e9e3fed333a392da42eb26f3a'
   var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   	maxZoom: 13, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors</a>'});
+
+
 
   var clouds = L.OWM.clouds({showLegend: false, opacity: 0.5, appId: weatherkey});
   var rain = L.OWM.rain({opacity: 0.5, appId: weatherkey});
@@ -49,7 +51,20 @@
   var map = L.map('map', { center: new L.LatLng(34.413963, -119.848946), zoom: 25, layers: [osm] });
   var baseMaps = { "OSM Standard": osm };
   var overlayMaps = { "Clouds": clouds,"Rain": rain, "Temperature (C)": temp, "Wind": wind};
-  var layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
+  var layerControl = L.control.layers(baseMaps, overlayMaps, {collapsed: false}).addTo(map);
+
+
+  var marker = L.marker([34.413963, -119.848946]).addTo(map);
+  marker.bindPopup("Marker of your current location, currently hard coded to Santa Barbara!").openPopup();
+  var popup = L.popup();
+  function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("Placeholder for future location selection. Location at: " + e.latlng.toString())
+        .openOn(map);
+}
+
+map.on('click', onMapClick);
 
   </script>
 
