@@ -22,6 +22,17 @@
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-starter-freemarker</artifactId>
 	</dependency>
+		<dependency>
+			<groupId>com.google.cloud</groupId>
+			<artifactId>google-cloud-firestore</artifactId>
+			<version>0.68.0-beta</version>
+		</dependency>
+    <dependency>
+      <groupId>com.google.firebase</groupId>
+      <artifactId>firebase-admin</artifactId>
+      <version>6.5.0</version>
+    </dependency>
+
     </dependencies>
 
     <properties>
@@ -40,7 +51,7 @@
                    <jdkVersion>1.8</jdkVersion>
                    <!-- Use your own application name -->
          	  <!-- at Heroku CLI, use heroku apps to list, or use Heroku Dashboard -->
-                   <appName>aivannik-jacquelinehuang-lab06</appName> 
+                   <appName>cs56-f18-gauchogardens</appName>
                    <processTypes>
                      <!-- Tell Heroku how to launch your application -->
                      <!-- You might have to remove the ./ in front   -->
@@ -54,6 +65,23 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+
+			<plugin>
+	 <!-- for testing database, use the command  -->
+  <groupId>org.codehaus.mojo</groupId>
+  <artifactId>exec-maven-plugin</artifactId>
+  <version>1.2.1</version>
+  <executions>
+    <execution>
+      <goals>
+        <goal>java</goal>
+      </goals>
+    </execution>
+  </executions>
+  <configuration>
+    <mainClass>edu.ucsb.cs56.pconrad.springboot.hello.DatabaseHelper</mainClass>
+  </configuration>
+</plugin>
         </plugins>
     </build>
 

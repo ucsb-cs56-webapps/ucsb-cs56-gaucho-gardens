@@ -16,15 +16,29 @@ public class HelloController {
         return "seasonalplants";
     }
 
-	@RequestMapping("/user_dashboard")
+	@RequestMapping("/user_bookmarks")
 	public String page2() {
-        return "user_dashboard";
+        return "user_bookmarks";
     }
-
-	@RequestMapping("/weather")
+	@RequestMapping("/search")
 	public String page3() {
+        return "search";
+    }
+	@RequestMapping("/photos")
+    public String page4() {
+        return "photos";
+    }
+	@RequestMapping("/weather")
+	public String page5() {
         return "weather";
     }
-
+	@RequestMapping("/cucumber")
+	public String page6() {
+        return "cucumber";
+    }	
+	@RequestMapping("/cucumberrecipe")
+	public String page7() {
+        return "cucumberrecipe";
+    }
 
 }
