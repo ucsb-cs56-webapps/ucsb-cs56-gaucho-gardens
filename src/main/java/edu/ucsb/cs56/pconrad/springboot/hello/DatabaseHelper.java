@@ -1,5 +1,6 @@
 package edu.ucsb.cs56.pconrad.springboot.hello;
 
+import com.google.auth.oauth2.GoogleCredentials;
 import com.google.cloud.firestore.Firestore;
 import com.google.cloud.firestore.FirestoreOptions;
 import com.google.cloud.firestore.DocumentReference;
@@ -7,10 +8,10 @@ import com.google.cloud.firestore.QueryDocumentSnapshot;
 import com.google.cloud.firestore.QuerySnapshot;
 import com.google.cloud.firestore.DocumentSnapshot;
 import com.google.cloud.firestore.WriteResult;
+import com.google.firebase.FirebaseApp;
 import com.google.api.core.ApiFuture;
 import java.util.*;
 import java.util.concurrent.ExecutionException;
-
 
 public class DatabaseHelper{
 	
@@ -19,10 +20,19 @@ public class DatabaseHelper{
 	public static final String PROJECTID = "gauchogardensdb";
 
 	public DatabaseHelper(){
+		/*
 		firestoreOptions = FirestoreOptions.getDefaultInstance().toBuilder()
         .setProjectId(PROJECTID)
         .build();
 		db = firestoreOptions.getService();
+		*/
+		InputStream serviceAccount = new ByteArrayInputStream(getFireBaseCredentials().getBytes("UTF-8"));
+  	GoogleCredentials credentials = GoogleCredentials.fromStream(serviceAccount);
+  	FirebaseOptions options = new FirebaseOptions.Builder()	
+    	.setCredentials(credentials)	
+    	.build();	
+   FirebaseApp.initializeApp(options);
+   Firestore db = FirestoreClient.getFirestore();
 }
 
 	public void writeNewVegetable(Vegetable veg){
@@ -93,5 +103,13 @@ public class DatabaseHelper{
 		Vegetable squash = db.readVegetable("Squash");
 		System.out.println(squash.toString());
 	}
+
+	public static String getFireBaseCredentials() {
+        ProcessBuilder processBuilder = new ProcessBuilder();	
+        if (processBuilder.environment().get("FIREBASE_JSON") != null) {
+            return processBuilder.environment().get("FIREBASE_JSON");
+        }
+	throw new RuntimeException("no FireBase Credential found.");
+    }
 
 }
