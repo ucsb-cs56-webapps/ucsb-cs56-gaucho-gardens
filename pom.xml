@@ -32,6 +32,13 @@
       <artifactId>firebase-admin</artifactId>
       <version>6.5.0</version>
     </dependency>
+	<!-- https://mvnrepository.com/artifact/org.pac4j/pac4j-oauth -->
+	<dependency>
+    	<groupId>org.pac4j</groupId>
+    		<artifactId>pac4j-oauth</artifactId>
+    		<version>3.3.0</version>
+    		<scope>runtime</scope>
+		</dependency>
 
     </dependencies>
 
