@@ -26,8 +26,8 @@ public class Vegetable{
 	@Override
 	public boolean equals(Object o){
 
-		if (!isInstanceOf(Vegetable) ) 
-			return false;
+	//	if (!isInstanceOf(Vegetable) ) 
+	//		return false;
 
 		String str_1 = this.toString();
 		String str_2 = o.toString();

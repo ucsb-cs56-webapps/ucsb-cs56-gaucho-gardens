@@ -9,9 +9,12 @@ import com.google.cloud.firestore.QuerySnapshot;
 import com.google.cloud.firestore.DocumentSnapshot;
 import com.google.cloud.firestore.WriteResult;
 import com.google.firebase.FirebaseApp;
+import com.google.firebase.FirebaseOptions;
+import com.google.firebase.cloud.FirestoreClient;
 import com.google.api.core.ApiFuture;
 import java.util.*;
 import java.util.concurrent.ExecutionException;
+import java.io.*;
 
 public class DatabaseHelper{
 	
@@ -26,13 +29,18 @@ public class DatabaseHelper{
         .build();
 		db = firestoreOptions.getService();
 		*/
-		InputStream serviceAccount = new ByteArrayInputStream(getFireBaseCredentials().getBytes("UTF-8"));
-  	GoogleCredentials credentials = GoogleCredentials.fromStream(serviceAccount);
+	try{
+	InputStream serviceAccount = new ByteArrayInputStream(getFireBaseCredentials().getBytes("UTF-8"));
+		  GoogleCredentials credentials = GoogleCredentials.fromStream(serviceAccount);
   	FirebaseOptions options = new FirebaseOptions.Builder()	
     	.setCredentials(credentials)	
     	.build();	
    FirebaseApp.initializeApp(options);
-   Firestore db = FirestoreClient.getFirestore();
+   db = FirestoreClient.getFirestore();
+	  } catch(IOException e){}
+	  	
+   
+   
 }
 
 	public void writeNewVegetable(Vegetable veg){
@@ -96,9 +104,9 @@ public class DatabaseHelper{
 	//mvn exec:java -D"exec.mainClass"="edu.ucsb.cs56.pconrad.springboot.hello.DatabaseHelper"
 	
 	public static void main(String[] args){
-	//	Vegetable v = new Vegetable("brocolli", "green", "summer", "c.jpg");
+		Vegetable v = new Vegetable("Cucumber", "green", "summer", "cucu.jpg");
 		DatabaseHelper db = new DatabaseHelper();
-	//	db.writeNewVegetable(v);
+		db.writeNewVegetable(v);
 		System.out.println(db.toString());
 		Vegetable squash = db.readVegetable("Squash");
 		System.out.println(squash.toString());
