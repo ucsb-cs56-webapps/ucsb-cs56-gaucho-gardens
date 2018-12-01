@@ -32,6 +32,13 @@ public class HelloController {
 	public String page5() {
         return "weather";
     }
-
+	@RequestMapping("/cucumber")
+	public String page6() {
+        return "cucumber";
+    }	
+	@RequestMapping("/cucumberrecipe")
+	public String page7() {
+        return "cucumberrecipe";
+    }
 
 }
