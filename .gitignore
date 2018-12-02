@@ -1,5 +1,7 @@
 *~
 
+.nfs*
+
 target
 # Compiled class file
 *.class
