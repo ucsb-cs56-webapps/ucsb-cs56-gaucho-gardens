@@ -1,4 +1,4 @@
-package edu.ucsb.cs56.pconrad.springboot.hello;
+package edu.ucsb.cs56.guacho_gardens.webapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package edu.ucsb.cs56.pconrad.springboot.hello;
+package edu.ucsb.cs56.guacho_gardens.webapp;
 
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.cloud.firestore.Firestore;

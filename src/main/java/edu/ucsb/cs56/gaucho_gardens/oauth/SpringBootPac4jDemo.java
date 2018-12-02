@@ -1,4 +1,4 @@
-package org.pac4j.demo.spring;
+package edu.ucsb.cs56.gaucho_gardens.oauth;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

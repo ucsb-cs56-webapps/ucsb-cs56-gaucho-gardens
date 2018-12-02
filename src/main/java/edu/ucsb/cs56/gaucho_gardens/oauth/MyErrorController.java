@@ -1,4 +1,4 @@
-package org.pac4j.demo.spring;
+package edu.ucsb.cs56.gaucho_gardens.oauth;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.web.BasicErrorController;

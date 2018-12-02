@@ -1,4 +1,4 @@
-package edu.ucsb.cs56.pconrad.springboot.hello;
+package edu.ucsb.cs56.guacho_gardens.webapp;
 
 public class Vegetable{
 	private String name;
