@@ -1,4 +1,4 @@
-package edu.ucsb.cs56.guacho_gardens.webapp;
+package edu.ucsb.cs56.gaucho_gardens.webapp;
 
 public class Vegetable{
 	private String name;

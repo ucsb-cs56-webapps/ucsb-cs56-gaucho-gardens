@@ -1,4 +1,4 @@
-package edu.ucsb.cs56.guacho_gardens.webapp;
+package edu.ucsb.cs56.gaucho_gardens.webapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

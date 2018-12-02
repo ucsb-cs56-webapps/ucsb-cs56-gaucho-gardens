@@ -1,4 +1,4 @@
-package edu.ucsb.cs56.guacho_gardens.webapp;
+package edu.ucsb.cs56.gaucho_gardens.webapp;
 
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.cloud.firestore.Firestore;
@@ -102,7 +102,7 @@ public class DatabaseHelper{
 	}
 	//for testing, use by running 
 	//mvn exec:java -D"exec.mainClass"="edu.ucsb.cs56.pconrad.springboot.hello.DatabaseHelper"
-	
+	/*
 	public static void main(String[] args){
 		Vegetable v = new Vegetable("Cucumber", "green", "summer", "cucu.jpg");
 		DatabaseHelper db = new DatabaseHelper();
@@ -111,7 +111,7 @@ public class DatabaseHelper{
 		Vegetable squash = db.readVegetable("Squash");
 		System.out.println(squash.toString());
 	}
-
+*/
 	public static String getFireBaseCredentials() {
         ProcessBuilder processBuilder = new ProcessBuilder();	
         if (processBuilder.environment().get("FIREBASE_JSON") != null) {

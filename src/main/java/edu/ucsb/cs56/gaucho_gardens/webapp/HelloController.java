@@ -1,4 +1,4 @@
-package edu.ucsb.cs56.guacho_gardens.webapp;
+package edu.ucsb.cs56.gaucho_gardens.webapp;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.stereotype.Controller;
