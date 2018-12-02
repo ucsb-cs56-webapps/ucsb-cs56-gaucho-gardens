@@ -3,14 +3,28 @@
  <head>
    <title>Seasonal Plants</title>
    <#include "head.ftl" />
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+	
  </head>
  <body>
    <#include "navbar.ftl" />
    <h1>Seasonal Plants</h1>
    <h3>Current Season: Winter</h3>
-  <p>
-  This will display a page of images of plants that can be grown in this season. There will be a link on the side
-  and a preview of an article talking about the best ways to grow the plant and if it is a vegetable tell us what kind of dishes it can make.
-  The data will be found from copying data from farming info sites.</p>
+
+	<a href="https://cs56-f18-gauchogardens.herokuapp.com/cucumber">
+		<img src="pictures/cucumber.jpg" class="img-thumbnail" alt="cucumber"  width="200" height="156"></img>
+	</a>
+	<br>
+	<br>
+	<a href="https://cs56-f18-gauchogardens.herokuapp.com/beet">
+		<img src="pictures/beet.jpg" class="img-thumbnail" alt="beet"  width="200" height="156"></img>
+	</a>
+	<br>
+	<br>
+	<a href="https://cs56-f18-gauchogardens.herokuapp.com/broccoli">
+		<img src="pictures/broccoli.jpeg" class="img-thumbnail" alt="broccoli"  width="200" height="156"></img>
+	</a>
+	<br>
+	<br>
  </body>
 </html>

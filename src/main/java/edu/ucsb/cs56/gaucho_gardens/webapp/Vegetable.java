@@ -26,10 +26,11 @@ public class Vegetable{
 	@Override
 	public boolean equals(Object o){
 
-		Vegetable tmp = (Vegetable) o;
+	//	if (!isInstanceOf(Vegetable) ) 
+	//		return false;
 
 		String str_1 = this.toString();
-		String str_2 = tmp.toString();
+		String str_2 = o.toString();
 
 		return str_1.equals(str_2);
 	}

@@ -2,21 +2,32 @@
 
 /*placeholder. White with black outline for redability in any background */
 h1 {
+	font-family:georgia;
     text-align: center;
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: green;
 
 }
-
+#link { 
+	color: red;
+	font-size: 30px; 
+}
 h2, h3{
+	font-family:georgia;
     text-align: center;
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-
+    color: green;
 }
 
+h4{
+	font-family:georgia;
+    text-align: left;
+    color: green;
+}
 p {
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-family:georgia;
+    color: black;
 
+}
+body{
+	font-family:georgia;
+	text-align: center;
 }
