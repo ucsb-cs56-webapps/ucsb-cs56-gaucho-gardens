@@ -3,7 +3,7 @@
 /*placeholder. White with black outline for redability in any background */
 h1 {
     text-align: center;
-    color: white;
+    color: green;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
 }
@@ -16,7 +16,7 @@ h2, h3{
 }
 
 p {
-    color: white;
+    color: black;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
 }
