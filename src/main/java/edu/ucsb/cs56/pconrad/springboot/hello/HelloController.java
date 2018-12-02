@@ -40,5 +40,20 @@ public class HelloController {
 	public String page7() {
         return "cucumberrecipe";
     }
-
+	@RequestMapping("/beet")
+	public String page8() {
+        return "beet";
+    }	
+	@RequestMapping("/beetrecipe")
+	public String page9() {
+        return "beetrecipe";
+    }
+	@RequestMapping("/broccoli")
+	public String page10() {
+        return "broccoli";
+    }	
+	@RequestMapping("/broccolirecipe")
+	public String page11() {
+        return "broccolirecipe";
+    }
 }
