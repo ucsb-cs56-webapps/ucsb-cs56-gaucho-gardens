@@ -31,7 +31,7 @@
 			<br>4 1/2 cups water
 			<br>Approx 28 grams fresh ginger
 			<br>
-			<br>INSTRUCTIONS
+			<br>INSTRUCTIONS:
 			<br>1) Wash and peel cucumbers
 			<br>2) Cut cucumbers into chunks and add to blender with water to blend
 			<br>3) Strain mixture through a strainer, at least 2 times removing pulp

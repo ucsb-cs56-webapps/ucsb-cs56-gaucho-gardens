@@ -3,6 +3,15 @@
  <head>
    <title>Broccoli</title>
    <#include "head.ftl" />
+   <style>
+	   img {
+			float: right;
+		}
+		p{
+			text-align: left;
+		}
+		
+	</style>
  </head>
  <body>
    <#include "navbar.ftl" />
@@ -12,18 +21,19 @@
    <h1><br>How To Grow Broccoli</h1><br>
        <div class="container" id="jumbotext">
 		<div class="jumbotron">
-			<h3> Sowing</h3>
+			<img src="pictures/broccoliGrow.jpg" class="img-thumbnail" alt="broccoliGrow" style="width:300px;height:300px;margin-left:15px;">
+			<h4> Sowing</h4>
 			<p>
 				For fall plantings, seed 85 to 100 days before your average first fall frost. If you live in a warm climate, a fall planting is best, as broccoli thrives in cool weather. Plant seeds in mid- to late-summer in most places.
 				Plant seeds ½ inch deep, or set transplants slightly deeper than they were grown originally.
 			</p>
-			<h3>Pricking-off</h3>
+			<h4>Pricking-off</h4>
 			<p>
 				Within a row, space your plants 12 to 24 inches apart with 36 inches between each row.
 				Space plants 12 to 24 inches apart, depending on the side heads you want to harvest.
 			</p>
 
-			<h3>Growing-on</h3>
+			<h4>Growing-on</h4>
 			<p>
 				Fertilize three weeks after transplanting.
 				Provide consistent soil moisture with regular watering, especially in drought conditions. Some varieties of broccoli are heat tolerant, but all need moisture.
@@ -31,7 +41,7 @@
 				Mulch will also help to keep soil temperatures down.
 			</p>
 			
-			<h3>Harvest</h3>
+			<h4>Harvest</h4>
 			<p>
 				Harvest broccoli when the buds of the head are firm and tight before the heads flower. If you do see yellow petals, harvest immediately.
 				For best taste, harvest in the morning before the soil heats up.

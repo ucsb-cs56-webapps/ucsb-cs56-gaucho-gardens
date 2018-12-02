@@ -31,12 +31,12 @@
 			<br>1 clove garlic, minced
 			<br>1/2 teaspoon lemon juice
 			<br>
-			<br>INSTRUCTIONS
+			<br>INSTRUCTIONS:
 			<br>1) Preheat the oven to 400 degrees F (200 degrees C).
 			<br>2) In a large bowl, toss broccoli florets with the extra virgin olive oil, sea salt, pepper and garlic. Spread the broccoli out in an even layer on a baking sheet.
 			<br>3) Bake in the preheated oven until florets are tender enough to pierce the stems with a fork, 15 to 20 minutes. Remove and transfer to a serving platter. Squeeze lemon juice liberally over the broccoli before serving for a refreshing, tangy finish.
 			<br>
-			<br>NUTRITION FACTS
+			<br>NUTRITION FACTS:
 			<br>Per Serving: 49 calories; 1.9 g fat; 7 g carbohydrates; 2.9 g protein; 0 mg cholesterol; 326 mg sodium. 
 			</p>
 	 </div>

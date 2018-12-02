@@ -12,7 +12,7 @@
    <h3>Current Season: Winter</h3>
 
 	<a href="https://cs56-f18-gauchogardens.herokuapp.com/cucumber">
-		<img src="pictures/cucumber.jpg" class="img-thumbnail" alt="cucumber"  width="200" height="100"></img>
+		<img src="pictures/cucumber.jpg" class="img-thumbnail" alt="cucumber"  width="200" height="156"></img>
 	</a>
 	<br>
 	<br>
@@ -24,6 +24,7 @@
 	<a href="https://cs56-f18-gauchogardens.herokuapp.com/broccoli">
 		<img src="pictures/broccoli.jpeg" class="img-thumbnail" alt="broccoli"  width="200" height="156"></img>
 	</a>
-
+	<br>
+	<br>
  </body>
 </html>
