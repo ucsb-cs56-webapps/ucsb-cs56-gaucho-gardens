@@ -27,7 +27,7 @@ public class HelloController {
     }
 
 //String = load html file as is
-//ModelAndView = we have template and data, stuff data into template
+//ModelAndView = we have template and data, stuff data into template when loading page 
 	@RequestMapping("/seasonalplants")
     public ModelAndView page1() {
 
