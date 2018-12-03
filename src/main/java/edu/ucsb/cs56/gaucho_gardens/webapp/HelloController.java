@@ -10,13 +10,14 @@ import java.util.ArrayList;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import edu.ucsb.cs56.gaucho_gardens.database.DatabaseHelper;
 
 @Controller
 public class HelloController {
 
     private Vegetable vegetable;	
-    private DatabaseHelper db;
+
+    @Autowired
+     private VegetableRepository repository;
 
     @RequestMapping("/")
     public String index(Model model) {
@@ -29,9 +30,8 @@ public class HelloController {
 //ModelAndView = we have template and data, stuff data into template when loading page 
 	@RequestMapping("/seasonalplants")
     public ModelAndView page1() {
-	  db = new DatabaseHelper();
       //db call here to a regular arraylist obj
-      ArrayList<Vegetable> plants = db.getPlants("winter", 3);
+      List<Vegetable> plants = repository.findAll();
       
       Map<String, Object> params = new HashMap<>();
       params.put("plants", plants);
