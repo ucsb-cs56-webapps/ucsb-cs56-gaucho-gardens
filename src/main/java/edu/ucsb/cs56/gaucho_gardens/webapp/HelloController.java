@@ -9,17 +9,20 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import edu.ucsb.cs56.gaucho_gardens.database.Database;
+
 @Controller
 public class HelloController {
 
     private Vegetable vegetable;
+    private ArrayList<Vegetable> checkedVeg = new ArrayList<Vegetable>();
+    @Autowired
+    private Database db;
 
     @RequestMapping("/")
     public String index(Model model) {
-
-        vegetable= new Vegetable ("Carrot","orange","winter","pictures/cucumber.jpg");
-
-        model.addAttribute("veg", this.vegetable);
+        this.vegetable = new Vegetable("a","a","a","a");
         return "index";
     }
 
@@ -29,12 +32,8 @@ public class HelloController {
     public ModelAndView page1() {
 
       //db call here to a regular arraylist obj
-      ArrayList<Vegetable> plants = new ArrayList <Vegetable>();
-      plants.add(new Vegetable("cucumber","green","winter","pictures/cucumber.jpg"));
-      plants.add(new Vegetable("beet","green","winter","pictures/beet.jpg"));
-      plants.add(new Vegetable("broccoli","green","winter","pictures/broccoli.jpeg"));
-
-
+      ArrayList<Vegetable> plants = getPlantList("winter");
+      
       Map<String, Object> params = new HashMap<>();
       params.put("plants", plants);
 
@@ -81,5 +80,18 @@ public class HelloController {
 	@RequestMapping("/broccolirecipe")
 	public String page11() {
         return "broccolirecipe";
+    }
+
+    private ArrayList<Vegetable> getPlantList(String season){
+        ArrayList<Vegetable> veg = new ArrayList<Vegetable>();
+        for(Vegetable v: db.findAll()){
+            if(v.getSeason().equals(season) && !checkedVeg.contains(veg)){ 
+                veg.add(v);
+                checkedVeg.add(v);
+                if(veg.size() == 3)
+                    return veg;
+            }
+        }
+        return veg;
     }
 }
