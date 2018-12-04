@@ -7,22 +7,25 @@ import org.springframework.boot.CommandLineRunner;
 
 
 @SpringBootApplication
-public class Application /*implements CommandLineRunner*/{
-//	@Autowired
-//	private Database db;
-    public static void main(String[] args) {
+public class Application implements CommandLineRunner{
+
+	@Autowired
+	private VegetableRepository repository;
+
+	public static void main(String[] args) {
 	SpringApplication.run(Application.class, args);
     }
 
-  /*  @Override
+  	@Override
 	public void run(String... args) throws Exception {
-		db.save(new Vegetable("cucumber","green","winter","pictures/cucumber.jpg"));
-		db.save(new Vegetable("beet","green","winter","pictures/beet.jpg"));
-		db.save(new Vegetable("broccoli","green","winter","pictures/broccoli.jpeg"));
-		for(Vegetable v: db.findAll()){
+	/*
+		repository.save(new Vegetable("cucumber","green","winter","pictures/cucumber.jpg"));
+		repository.save(new Vegetable("beet","green","winter","pictures/beet.jpg"));
+		repository.save(new Vegetable("broccoli","green","winter","pictures/broccoli.jpeg"));
+		for(Vegetable v: repository.findAll()){
 			System.out.println(v.toString());
 		}
-	
-}
-*/
+	*/
+	}
+
 }

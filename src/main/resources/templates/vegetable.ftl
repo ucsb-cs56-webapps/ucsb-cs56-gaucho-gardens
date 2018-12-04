@@ -8,23 +8,23 @@
  </head>
  <body>
    <#include "navbar.ftl" />
-   <h1>Seasonal Plants</h1>
-   <h3>Current Season: Winter</h3>
 
- <#list plants as plant>
  <!--template, replaces plant name and picture with the object variables  -->
 
- <a href="/vegetable?name=${plant.name}">
+	<h1>${plant.name}</h1>
+
+
   <#if (plant.imageURL) ??> 
 	  <img src="${plant.imageURL}" class="img-thumbnail" alt="${plant.name}"  width="200" height="156"></img>	
 	</#if> 
-	<p>${plant.name}</p>
+	
+	<#if (plant.text) ??>
+		${plant.text}
+	</#if>
 
- </a>
  <br>
  <br>
 
- </#list>
 
 <!--	<a href="https://cs56-f18-gauchogardens.herokuapp.com/cucumber">
 		<img src="pictures/cucumber.jpg" class="img-thumbnail" alt="cucumber"  width="200" height="156"></img>

@@ -4,15 +4,22 @@ import org.springframework.ui.ModelMap;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.bind.annotation.ModelAttribute ;
+import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Map;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 @Controller
 public class HelloController {
+
+    private static Logger logger = LoggerFactory.getLogger(HelloController.class);
 
     private Vegetable vegetable;	
 
@@ -38,6 +45,19 @@ public class HelloController {
 
       //this params thing -> ftl. Put any name to the hashmap and value = any java obj (thats a javabean)
       return  new ModelAndView ("seasonalplants", params);
+    }
+
+	@RequestMapping("/vegetable")
+	public @ResponseBody ModelAndView vegetable(@ModelAttribute("veg") Vegetable veg) {      //db call here to a regular arraylist obj
+      logger.info("veg=" + veg);
+        Vegetable plant = repository.findByName(veg.getName());
+        logger.info("plant=" + plant);
+      
+      Map<String, Object> params = new HashMap<>();
+      params.put("plant", plant);
+
+      //this params thing -> ftl. Put any name to the hashmap and value = any java obj (thats a javabean)
+      return new ModelAndView ("vegetable", params);
     }
 
 	@RequestMapping("/user_bookmarks")

@@ -10,8 +10,10 @@ import lombok.NonNull;
 @RequiredArgsConstructor
 public class Vegetable{
 	@Id private String id;
+	private String text;
 	@NonNull private String name;
 	@NonNull private String color;
 	@NonNull private String season;
 	@NonNull private String imageURL;
+
 }
