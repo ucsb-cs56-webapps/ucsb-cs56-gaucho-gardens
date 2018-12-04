@@ -28,8 +28,6 @@ public class HelloController {
 
     @RequestMapping("/")
     public String index(Model model) {
-        vegetable= new Vegetable ("Carrot","orange","winter","pictures/cucumber.jpg");
-        model.addAttribute("veg", this.vegetable);
         return "index";
     }
 

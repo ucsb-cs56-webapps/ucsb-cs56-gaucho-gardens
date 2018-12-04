@@ -17,11 +17,14 @@
   <#if (plant.imageURL) ??> 
 	  <img src="${plant.imageURL}" class="img-thumbnail" alt="${plant.name}"  width="200" height="156"></img>	
 	</#if> 
-	
+
 	<#if (plant.text) ??>
 		${plant.text}
 	</#if>
 
+	<#if (plant.recipeURL) ??>
+		<a href= "${plant.recipeURL}">Recipe Link</a>
+	</#if>
  <br>
  <br>
 

@@ -12,7 +12,9 @@ public class Vegetable{
 	@Id private String id;
 	private String text;
 	@NonNull private String name;
-	@NonNull private String color;
+	//to be replaced with a list of urls or something
+	@NonNull private String recipeURL;
+	@NonNull private String instructions;
 	@NonNull private String season;
 	@NonNull private String imageURL;
 
