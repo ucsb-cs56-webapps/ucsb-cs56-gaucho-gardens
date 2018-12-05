@@ -13,38 +13,18 @@
 
  <#list plants as plant>
  <!--template, replaces plant name and picture with the object variables  -->
-
+<br>
  <a href="/vegetable?name=${plant.name}">
-  <#if (plant.imageURL) ??> 
-	  <img src="${plant.imageURL}" class="img-thumbnail" alt="${plant.name}"  width="200" height="156"></img>	
-	</#if> 
-	<p>${plant.name}</p>
+  <#if (plant.imageURL) ??>
+	  <img src="${plant.imageURL}" class="img-thumbnail" alt="${plant.name}"  width="200" height="156"></img>
+	</#if>
+	<p><h5>${plant.name}</h5></p>
 
  </a>
- <br>
+
  <br>
 
  </#list>
-
-<!--	<a href="https://cs56-f18-gauchogardens.herokuapp.com/cucumber">
-		<img src="pictures/cucumber.jpg" class="img-thumbnail" alt="cucumber"  width="200" height="156"></img>
-	</a>
-	<br>
-	<br>
-
-	<a href="https://cs56-f18-gauchogardens.herokuapp.com/beet">
-		<img src="pictures/beet.jpg" class="img-thumbnail" alt="beet"  width="200" height="156"></img>
-	</a>
-	<br>
-	<br>
-
-	<a href="https://cs56-f18-gauchogardens.herokuapp.com/broccoli">
-		<img src="pictures/broccoli.jpeg" class="img-thumbnail" alt="broccoli"  width="200" height="156"></img>
-	</a>
-	<br>
-	<br>
--->
-
 
  </body>
 </html>

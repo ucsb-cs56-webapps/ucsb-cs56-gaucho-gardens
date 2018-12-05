@@ -8,22 +8,24 @@
  </head>
  <body>
    <#include "navbar.ftl" />
-
+   <div style="text-align:left; width:100%; padding:0;">
+		<button onclick="goBack()">Go Back</button>
+	</div>
  <!--template, replaces plant name and picture with the object variables  -->
 
 	<h1>${plant.name}</h1>
 
 
-  <#if (plant.imageURL) ??> 
-	  <img src="${plant.imageURL}" class="img-thumbnail" alt="${plant.name}"  width="200" height="156"></img>	
-	</#if> 
+  <#if (plant.imageURL) ??>
+	  <img src="${plant.imageURL}" class="img-thumbnail" alt="${plant.name}"  width="200" height="156"></img>
+	</#if>
 
 	<#if (plant.text) ??>
 		${plant.text}
 	</#if>
 
 	<#if (plant.recipeURL) ??>
-		<a href= "${plant.recipeURL}">Recipe Link</a>
+		<a href= "${plant.recipeURL}">${plant.name} recipe</a>
 	</#if>
  <br>
  <br>
@@ -47,7 +49,7 @@
 	<br>
 	<br>
 -->
-
+ <script src= "script.js"></script>
 
  </body>
 </html>

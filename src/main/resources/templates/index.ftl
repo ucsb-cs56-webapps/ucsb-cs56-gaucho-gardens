@@ -15,15 +15,8 @@
       </div>
     </div>
 
-    <div class=container">
-	  <table>
-		<tr>
-			<td>
-			  <p>${veg}</p>
-			</td>
-		</tr>
-	  </table>
-	</div>
-   
+<img src="/pictures/garden.jpg" class="img-thumbnail" alt="garden"  width="300" height="300"></img>
+<h5> Our mission is to increase UCSB student involvement in gardening
+</h5>
   </body>
 </html>
