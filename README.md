@@ -23,7 +23,7 @@ Once mongodb is installed either
 
 then run the following command from your command line:
 
-% mongorestore -h <your deployment info> -d <your dbname> -u <your dbuser> -p <your dbpassword> <input db directory>
+% mongorestore -h your deployment info -d your dbname -u your dbuser -p your dbpassword    input db directory
   
 where -h is your mlab deployment info 
 dbuser and dbpass is the one you created in mlab
