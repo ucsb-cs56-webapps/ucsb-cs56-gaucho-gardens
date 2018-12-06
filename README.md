@@ -6,20 +6,20 @@ GauchoGardens allows users to gain knowledge of plants that can be grown in the 
 Setup Instructions:
 
 Create a Heroku account and setup a new heroku app:
-https://ucsb-cs56-f18.github.io/lab/lab06/
+<br> https://ucsb-cs56-f18.github.io/lab/lab06/
 
 create an Mlab account and create a new deployment:
-https://ucsb-cs56-pconrad.github.io/topics/mongodb_mlab/
+<br> https://ucsb-cs56-pconrad.github.io/topics/mongodb_mlab/
 
 Create an empty database and at aleast one set of user credentials
 
 Install mongodb (needed to import database):
-https://docs.mongodb.com/v3.6/installation/
+<br> https://docs.mongodb.com/v3.6/installation/
 
 Once mongodb is installed either 
--cd into the installations /bin directory or 
--set a mongo environment variable linking to the bin directory 
-https://dangphongvanthanh.wordpress.com/2017/06/12/add-mongos-bin-folder-to-the-path-environment-variable/
+<br> -cd into the installations /bin directory or 
+<br> -set a mongo environment variable linking to the bin directory 
+<br> https://dangphongvanthanh.wordpress.com/2017/06/12/add-mongos-bin-folder-to-the-path-environment-variable/
 
 then run the following command from your command line:
 
@@ -31,7 +31,7 @@ the input db directory is the directory in the root of the git repository named 
 
 for troubleshooting help please utilize the documentation:
 
-https://docs.mlab.com/migrating/
+<br> https://docs.mlab.com/migrating/
 
 note: the tools tab of your mlab deployment also contains a pre-filled mongorestore that contains your -h and -d values
 
