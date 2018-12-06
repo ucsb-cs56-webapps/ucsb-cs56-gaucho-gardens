@@ -23,20 +23,23 @@ Once mongodb is installed either
 
 then run the following command from your command line:
 
-% mongorestore -h your deployment info -d your dbname -u your dbuser -p your dbpassword    input db directory
+% mongorestore -h <your deployment info -d your dbname -u your dbuser -p your dbpassword    input db directory
   
 where -h is your mlab deployment info 
 dbuser and dbpass is the one you created in mlab
 the input db directory is the directory in the root of the git repository named 'gaucho_gardens_DB_Backup'
 
 for troubleshooting help please utilize the documentation:
-
 <br> https://docs.mlab.com/migrating/
 
 note: the tools tab of your mlab deployment also contains a pre-filled mongorestore that contains your -h and -d values
 
+
+TODO: need to link documentation so users can setup a map api key, and to help setup their heroku envir vars
+
 <br> https://cs56-f18-gauchogardens.herokuapp.com
 
+note: the credentials are located in the oath directory of the repositroy. It currently is just skeleton with no actual functionality
 #For help with credentials 
 see the readme <https://github.com/ucsb-cs56-pconrad/spring-boot-github-oauth-demo02>
 
