@@ -34,7 +34,7 @@ the input db directory is the directory in the root of the git repository named 
 for troubleshooting help please utilize the documentation:
 <br> https://docs.mlab.com/migrating/
 
-note: the tools tab of your mlab deployment also contains a pre-filled mongorestore command that contains your -h and -d values
+note: the tools tab of your mlab console also contains a pre-filled mongorestore command that contains your -h and -d values
 
 you need to setup your Heroku variables for the database, there are two ways to do this:
 via the python file setHerokuEnv.py(you will need to store the values listed below in a file heroku.json, a template heroku.json.SAMPLE is provided)
