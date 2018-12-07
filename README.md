@@ -5,6 +5,8 @@ GauchoGardens allows users to gain knowledge of plants that can be grown in the 
 
 Setup Instructions:
 
+Clone the branch labeled "jackie" as this is the most up to date branch
+
 Create a Heroku account and setup a new heroku app:
 <br> https://ucsb-cs56-f18.github.io/lab/lab06/
 
