@@ -47,9 +47,8 @@ https://ucsb-cs56-pconrad.github.io/topics/mongodb_spring_properties/
 
 In order to run your database locally you need to setup a localhost.json file, you can use the localhost.json.SAMPLE file in the
 root directory as a template
-once your localhost.json file is setup run the env.sh script 
+<br>once your localhost.json file is setup run the env.sh script in order to input the changes before deploying locally
 <br>% . env.sh
-in order to input the changes before deploying locally
 
 note: the credentials are located in the oath directory of the repositroy. It currently is just skeleton with no actual functionality
 For help with credentials 
