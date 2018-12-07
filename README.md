@@ -27,9 +27,9 @@ then run the following command from your command line:
 
 % mongorestore -h yourhostinfo -d yourdbname -u yourdbuser -p yourdbpassword  input db directory
   
-where -h is your host info 
-dbuser and dbpass is the one you created in mlab
-the input db directory is the directory in the root of the git repository named 'gaucho_gardens_DB_Backup'
+<br>where -h is your host info 
+<br>dbuser and dbpass is the one you created in mlab
+<br>the input db directory is in the root of the git repository named 'gaucho_gardens_DB_Backup'
 
 for troubleshooting help please utilize the documentation:
 <br> https://docs.mlab.com/migrating/
