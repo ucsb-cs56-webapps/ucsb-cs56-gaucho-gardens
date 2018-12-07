@@ -57,4 +57,3 @@ see the readme <https://github.com/ucsb-cs56-pconrad/spring-boot-github-oauth-de
 
 
 <br> https://cs56-f18-gauchogardens.herokuapp.com
-
