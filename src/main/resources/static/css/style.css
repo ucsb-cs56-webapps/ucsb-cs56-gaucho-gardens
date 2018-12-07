@@ -1,0 +1,40 @@
+/*I know nothing about css but I made a file anyways. Feel free to replace this */
+
+/*placeholder. White with black outline for redability in any background */
+h1 {
+    text-align: center;
+    color: green;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+h2, h3{
+    text-align: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+p {
+  text-align: left;
+    color: black;
+
+}
+h4{
+	font-family:georgia;
+    text-align: left;
+    color: green;
+}
+h5{
+	font-family:georgia;
+    text-align: center;
+    color: green;
+}
+p {	font-family:georgia;
+    color: black;
+
+}
+
+body{	font-family:georgia;
+	text-align: center;
+}
